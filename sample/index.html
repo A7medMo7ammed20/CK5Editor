@@ -1,0 +1,125 @@
+<!DOCTYPE html><!--
+	Copyright (c) 2014-2024, CKSource Holding sp. z o.o. All rights reserved.
+	This file is licensed under the terms of the MIT License (see LICENSE.md).
+-->
+
+<html lang="en" dir="ltr">
+	<head>
+		<title>CKEditor 5 ClassicEditor build</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		   <script>
+
+
+		window.integrationScope = {
+		  data:"",
+		  setData:function(data){
+			this.data=data;
+			this.setData2&&this.setData2(data);
+		  },
+		  getData:function(){
+			return this.data;
+		  },
+		};
+
+
+
+
+        
+  </script>
+
+		<!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+	</head>
+
+
+
+  <!-- ... -->
+  <script type="application/javascript"
+		  src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js"
+		  defer></script>
+
+
+	<body data-editor="ClassicEditor" data-collaboration="false" data-revision-history="false">
+		<style>
+            :root {
+                --ck-color-text: #974EE9;
+                --ck-color-base-foreground: #974EE9;
+                --ck-color-foreground: #974EE9;
+                --ck-color-base-border: #974EE9;
+                --ck-color-focus-border: #974EE9;
+                --ck-color-header-background: #974EE9;
+                    --ck-powered-by-line-height: 10px;
+    --ck-powered-by-padding-vertical: 2px;
+    --ck-powered-by-padding-horizontal: 4px;
+    --ck-powered-by-text-color: transparent;
+    --ck-powered-by-border-radius: 100px;
+    --ck-powered-by-background:transparent;
+    --ck-powered-by-border-color:transparent;
+            }
+
+    /* "Powered by CKEditor" logo customization. */
+    .ck.ck-balloon-panel.ck-powered-by-balloon {
+        /* You can use your own variables here as well. */
+        --ck-powered-by-background: transparent;
+        --ck-powered-by-border-color: transparent;
+    }
+
+    .ck.ck-balloon-panel.ck-powered-by-balloon .ck.ck-powered-by .ck-powered-by__label {
+        text-transform: none;
+        font-family: var(--main-font-family);
+        padding-left: 2px;
+        color: var(--main-text-color);
+    }
+
+    .ck.ck-balloon-panel.ck-powered-by-balloon .ck.ck-powered-by .ck-icon {
+        filter: brightness(10);
+    }
+            #container {
+                width: 100%;
+                decoration: none;
+                border: 1px solid #974EE9;
+                            }
+    
+            .ck-editor__editable[role="textbox"] {
+                /* editing area */
+                min-height:400px;
+            }
+    
+            .ck-content .image {
+                /* block images */
+                max-width: 80%;
+                max-height: 80%;
+            }
+    
+            /* Default toolbar styles */
+            .ck-toolbar {
+                display: flex;
+                border: 1px solid #974EE9;
+                border-radius: 15px;
+                background: #974EE9;
+                color: #fff;
+                font-size: 14px;
+                line-height: 1;
+                font-family: Helvetica, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                user-select: none;
+                -webkit-touch-callout: none;
+            }
+    
+            /* Responsive toolbar styles */
+            @media screen and (max-width: 600px) {
+                .ck-toolbar {
+                    flex-direction: column;
+                }
+            }
+
+</style>
+	
+					<div class="editor"></div>
+				
+	
+		<script src="../build/ckeditor.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
